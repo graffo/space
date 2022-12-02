@@ -1,22 +1,27 @@
-import Header from '../../components/Header'
-import Nav from '../../components/Nav'
-import styles from './Home.modules.scss'
-import bannerImg from '../../assets/banner.png'
+import Banner from 'components/Banner';
+import Footer from 'components/Footer';
+import Gallery from 'components/Gallery';
+import Header from 'components/Header'
+import Nav from 'components/Nav'
+import Popular from 'components/Popular';
+import styles from './Home.module.scss'
 
-export default function Home(){
-    return(
+export default function Home() {
+    return (
         <>
-        <Header />
-        <main>
-            <section className={styles.principal}>
-                <Nav />
-                <div>
-                    <h2>A galeria mais alta do espaço</h2>
-                    <img src={bannerImg} alt="A imagem da terra vista do espaço" />
-                </div>
-            </section>
-        </main>
-        
+            <Header />
+            <main>
+                <section className={styles.principal}>
+                    <Nav />
+                    <Banner />
+                </section>
+            </main>
+            <div className={styles.galeria}>
+                <Gallery/>
+                <Popular />
+            </div>
+            <Footer />
+
         </>
-    )
+    );
 }

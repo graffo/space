@@ -1,0 +1,41 @@
+@import '../../styles/vars';
+
+.menu {
+  width: 18%;
+  font-family: $fonte-normal;
+  &__list {
+    padding-left: 0.5rem;
+    margin: 0;
+    height: 276px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+ 
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ 
+    &:first-child {
+      a {
+        font-weight: 700;
+        color: $azul-claro;
+      }
+    }
+  }
+ 
+  img {
+    margin-right: 0.5rem;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+ 
+  a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: #d9d9d9;
+  }
+}
