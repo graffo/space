@@ -1,4 +1,4 @@
-import Home from "./pages/Home";
+import Home from "./Pages/Home";
 import "./styles/global.scss"
 //Coment
 

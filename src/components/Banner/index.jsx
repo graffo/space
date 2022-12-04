@@ -1,5 +1,5 @@
 import banner from '../../assets/banner.png'
-import styles from '../../pages/Home/Home.module.scss'
+import styles from '../../Pages/Home/Home.module.scss'
 export default function Banner() {
     return (
         <div className={styles.principal__imagem} >
